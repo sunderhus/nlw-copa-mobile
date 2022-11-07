@@ -3,8 +3,10 @@ import {Center,Icon,Text} from 'native-base'
 import {Button, Loading} from '@/components'
 import Logo  from '@/assets/logo.svg'
 import {Fontisto} from '@expo/vector-icons'
+import { useAuth } from '@/contexts/AuthContext'
 
 const SignIn: React.FC = () => {
+  const {signIn,user} = useAuth();
   return (
     <Center flex={1} paddingX={4} bgColor="gray.900" >
       <Logo width={212} height={40}/>
@@ -21,6 +23,7 @@ const SignIn: React.FC = () => {
           />
         }
         mt={12}
+        onPress={signIn}
       />
       <Text color='white' textAlign='center' mt={4}>
         Não utilizamos nenhuma informação além {'\n'}
