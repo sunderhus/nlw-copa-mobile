@@ -1,6 +1,6 @@
 import { Loading } from '@/components';
 import { AuthContextProvider } from '@/contexts/AuthContext';
-import { Find } from '@/screens';
+import { Pools } from '@/screens';
 import { THEME } from '@/styles/theme';
 import { Roboto_400Regular, Roboto_500Medium, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto';
 import { NativeBaseProvider, StatusBar } from 'native-base';
@@ -17,7 +17,7 @@ export default function App() {
           translucent
         />
         {
-          fontsLoaded ? <Find /> : <Loading />
+          fontsLoaded ? <Pools /> : <Loading />
         }
       </AuthContextProvider>
     </NativeBaseProvider>
