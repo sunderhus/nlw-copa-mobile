@@ -16,8 +16,6 @@ const Button: React.FC<Props> = ({title, type = 'PRIMARY', ...props}) => {
       w="full"
       h={14}
       rounded="sm"
-      fontSize="md"
-      textTransform="uppercase"
       bg={
         type  === 'SECONDARY'?'red.500':'yellow.500'
       }
@@ -27,8 +25,9 @@ const Button: React.FC<Props> = ({title, type = 'PRIMARY', ...props}) => {
       {...props}
       >
         <Text
-          fontSize="sm"
           fontFamily="heading"
+          fontSize="md"
+          textTransform="uppercase"
           color={type==="SECONDARY" ?'white':'black'}
         >
             {title}
