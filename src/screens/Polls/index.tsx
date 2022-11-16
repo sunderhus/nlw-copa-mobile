@@ -3,7 +3,7 @@ import { Icon, VStack } from "native-base";
 import {Octicons} from "@expo/vector-icons"
 
 
-const Pools: React.FC = ()=>{
+const Polls: React.FC = ()=>{
     return(
         <VStack
             flex={1}
@@ -28,4 +28,4 @@ const Pools: React.FC = ()=>{
 };
 
 
-export default Pools;
+export default Polls;

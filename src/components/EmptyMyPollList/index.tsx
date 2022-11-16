@@ -4,7 +4,7 @@ interface Props {
   code: string;
 }
 
-const  EmptyMyPoolList:React.FC = ({ code }: Props) =>{
+const  EmptyMyPollList:React.FC = ({ code }: Props) =>{
   return (
     <Row flexWrap="wrap" justifyContent="center" p={4}>
       <Text color="gray.200" fontSize="sm">
@@ -32,4 +32,4 @@ const  EmptyMyPoolList:React.FC = ({ code }: Props) =>{
   );
 }
 
-export default EmptyMyPoolList;
+export default EmptyMyPollList;

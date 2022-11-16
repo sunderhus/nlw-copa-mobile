@@ -1,10 +1,10 @@
 import { Box } from 'native-base';
 
 interface Props {
-  poolId: string;
+  pollId: string;
 }
 
-const Guesses:React.FC<Props> = ({ poolId })=> {
+const Guesses:React.FC<Props> = ({ pollId })=> {
   return (
     <Box>
 

@@ -3,7 +3,7 @@ import { Heading, HStack, Text, VStack } from 'native-base';
 
 import Participants,{ ParticipantProps } from '@/components/Participants';
 
-export interface PoolCardProps {
+export interface PollCardProps {
   id: string;
   code: string;
   title: string;
@@ -19,10 +19,10 @@ export interface PoolCardProps {
 }
 
 interface Props extends TouchableOpacityProps {
-  data: PoolCardProps;
+  data: PollCardProps;
 }
 
-const PoolCard: React.FC<Props> = ({ data, ...rest }) => {
+const PollCard: React.FC<Props> = ({ data, ...rest }) => {
   return (
     <TouchableOpacity {...rest}>
       <HStack
@@ -56,4 +56,4 @@ const PoolCard: React.FC<Props> = ({ data, ...rest }) => {
   );
 }
 
-export default PoolCard
+export default PollCard

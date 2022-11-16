@@ -1,13 +1,13 @@
 import { Heading, HStack, Text, VStack } from 'native-base';
 
-import { PoolCardProps } from '@/components/PoolCard';
+import { PollCardProps } from '@/components/PollCard';
 import Participants from '@/components/Participants';
 
 interface Props {
-  data: PoolCardProps;
+  data: PollCardProps;
 }
 
-const PoolHeader: React.FC<Props> = ({ data }) => {
+const PollHeader: React.FC<Props> = ({ data }) => {
   return (
     <HStack
       w="full"
@@ -44,4 +44,4 @@ const PoolHeader: React.FC<Props> = ({ data }) => {
   );
 }
 
-export default PoolHeader;
+export default PollHeader;
