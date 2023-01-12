@@ -9,7 +9,10 @@ const Polls: React.FC = ()=>{
             flex={1}
             bgColor="gray.900"
         >
-            <Header title="Meus Bolões" showBackButton/>
+            <Header 
+                title="Meus Bolões"
+                showBackButton
+            />
 
             <VStack
                 mt={6}
@@ -20,7 +23,13 @@ const Polls: React.FC = ()=>{
                 mb={4}
             >
                 <Button
-                leftIcon={<Icon as={Octicons} name="search" color="black" size="md" />}
+                leftIcon={
+                <Icon 
+                    as={Octicons}
+                    name="search"
+                    color="black"
+                    size="md"
+                />}
                 title="Buscas Bolão por código"/>
             </VStack>
         </VStack>
