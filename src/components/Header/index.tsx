@@ -1,5 +1,6 @@
 import ButtonIcon from '@/components/ButtonIcon';
 import { AntDesign, Feather } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import { Box, HStack, Text } from 'native-base';
 
 interface Props {
@@ -14,13 +15,14 @@ const Header: React.FC<Props> = ({
   showShareButton = false
 }) => {
   const EmptyBoxSpace = () => (<Box w={6} h={6} />);
+  const {goBack} = useNavigation();
 
   return (
     <HStack w="full" h={24} bgColor="gray.800" alignItems="flex-end" pb={5} px={5}>
       <HStack w="full" alignItems="center" justifyContent="space-between">
         {
           showBackButton
-            ? <ButtonIcon as={Feather} name="chevron-left"/>
+            ? <ButtonIcon as={Feather} name="chevron-left" onPress={()=>goBack()}/>
             : <EmptyBoxSpace />
         }
 

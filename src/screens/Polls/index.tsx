@@ -1,9 +1,12 @@
 import { Button, Header } from "@/components";
 import { Icon, VStack } from "native-base";
 import {Octicons} from "@expo/vector-icons"
+import { useNavigation } from "@react-navigation/native";
 
 
 const Polls: React.FC = ()=>{
+    const {navigate} = useNavigation()
+
     return(
         <VStack
             flex={1}
@@ -30,7 +33,9 @@ const Polls: React.FC = ()=>{
                     color="black"
                     size="md"
                 />}
-                title="Buscas Bolão por código"/>
+                title="Buscar bolão por código"
+                onPress={()=>navigate('find')}
+                />
             </VStack>
         </VStack>
     )

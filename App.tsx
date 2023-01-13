@@ -1,6 +1,6 @@
 import { Loading } from '@/components';
 import { AuthContextProvider } from '@/contexts/AuthContext';
-import { Polls } from '@/screens';
+import Routes from '@/routes';
 import { THEME } from '@/styles/theme';
 import { Roboto_400Regular, Roboto_500Medium, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto';
 import { NativeBaseProvider, StatusBar } from 'native-base';
@@ -17,7 +17,7 @@ export default function App() {
           translucent
         />
         {
-          fontsLoaded ? <Polls /> : <Loading />
+          fontsLoaded ? <Routes /> : <Loading />
         }
       </AuthContextProvider>
     </NativeBaseProvider>

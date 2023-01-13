@@ -18,7 +18,7 @@ const Find: React.FC = () => {
             />
 
             <Button
-              title="Bucar bolão"
+              title="Buscar bolão"
             />
         </VStack>
     </VStack>
