@@ -1,25 +1,25 @@
-import { TouchableOpacity, TouchableOpacityProps } from 'react-native';
-import { Heading, HStack, Text, VStack } from 'native-base';
+import { TouchableOpacity, TouchableOpacityProps } from 'react-native'
+import { Heading, HStack, Text, VStack } from 'native-base'
 
-import Participants,{ ParticipantProps } from '@/components/Participants';
+import Participants, { ParticipantProps } from '@/components/Participants'
 
 export interface PollCardProps {
-  id: string;
-  code: string;
-  title: string;
-  ownerId: string;
-  createdAt: string;
+  id: string
+  code: string
+  title: string
+  ownerId: string
+  createdAt: string
   owner: {
-    name: string;
-  },
-  participants: ParticipantProps[];
+    name: string
+  }
+  participants: ParticipantProps[]
   _count: {
-    participants: number;
+    participants: number
   }
 }
 
 interface Props extends TouchableOpacityProps {
-  data: PollCardProps;
+  data: PollCardProps
 }
 
 const PollCard: React.FC<Props> = ({ data, ...rest }) => {
@@ -53,7 +53,7 @@ const PollCard: React.FC<Props> = ({ data, ...rest }) => {
         />
       </HStack>
     </TouchableOpacity>
-  );
+  )
 }
 
 export default PollCard

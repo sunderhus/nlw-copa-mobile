@@ -1,6 +1,6 @@
-import { Input as NativeBaseInput, IInputProps } from 'native-base';
+import { Input as NativeBaseInput, IInputProps } from 'native-base'
 
-const Input:React.FC<IInputProps> = ({ ...rest }) =>{
+const Input: React.FC<IInputProps> = ({ ...rest }) => {
   return (
     <NativeBaseInput
       bg="gray.800"
@@ -12,12 +12,12 @@ const Input:React.FC<IInputProps> = ({ ...rest }) =>{
       color="white"
       placeholderTextColor="gray.300"
       _focus={{
-        bg: "gray.800",
-        borderColor: "gray.600"
+        bg: 'gray.800',
+        borderColor: 'gray.600'
       }}
       {...rest}
     />
-  );
+  )
 }
 
-export default Input;
+export default Input

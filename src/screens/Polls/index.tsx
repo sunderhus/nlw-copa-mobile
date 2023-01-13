@@ -1,18 +1,17 @@
-import { Button, Header } from "@/components";
-import { Icon, VStack } from "native-base";
-import {Octicons} from "@expo/vector-icons"
-import { useNavigation } from "@react-navigation/native";
+import { Button, Header } from '@/components'
+import { Icon, VStack } from 'native-base'
+import { Octicons } from '@expo/vector-icons'
+import { useNavigation } from '@react-navigation/native'
 
+const Polls: React.FC = () => {
+  const { navigate } = useNavigation()
 
-const Polls: React.FC = ()=>{
-    const {navigate} = useNavigation()
-
-    return(
+  return (
         <VStack
             flex={1}
             bgColor="gray.900"
         >
-            <Header 
+            <Header
                 title="Meus Bolões"
                 showBackButton
             />
@@ -27,19 +26,18 @@ const Polls: React.FC = ()=>{
             >
                 <Button
                 leftIcon={
-                <Icon 
+                <Icon
                     as={Octicons}
                     name="search"
                     color="black"
                     size="md"
                 />}
                 title="Buscar bolão por código"
-                onPress={()=>navigate('find')}
+                onPress={() => { navigate('find') }}
                 />
             </VStack>
         </VStack>
-    )
-};
+  )
+}
 
-
-export default Polls;
+export default Polls

@@ -1,6 +1,6 @@
-import { Button, Header, Input } from '@/components';
-import { Heading, VStack } from 'native-base';
-import React from 'react';
+import { Button, Header, Input } from '@/components'
+import { Heading, VStack } from 'native-base'
+import React from 'react'
 
 const Find: React.FC = () => {
   return (
@@ -8,8 +8,8 @@ const Find: React.FC = () => {
         <Header title='Buscar por código'/>
 
         <VStack mt={8} mx={5} alignItems="center">
-            <Heading fontSize={"xl"} color={"white"} mb={8} textAlign="center" >
-                Encontre um bolão através de {"\n"} seu código único
+            <Heading fontSize={'xl'} color={'white'} mb={8} textAlign="center" >
+                Encontre um bolão através de {'\n'} seu código único
             </Heading>
 
             <Input
@@ -22,8 +22,7 @@ const Find: React.FC = () => {
             />
         </VStack>
     </VStack>
-  );
-
+  )
 }
 
-export default Find;
+export default Find

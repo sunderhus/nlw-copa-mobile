@@ -1,10 +1,10 @@
-import { Heading, HStack, Text, VStack } from 'native-base';
+import { Heading, HStack, Text, VStack } from 'native-base'
 
-import { PollCardProps } from '@/components/PollCard';
-import Participants from '@/components/Participants';
+import { PollCardProps } from '@/components/PollCard'
+import Participants from '@/components/Participants'
 
 interface Props {
-  data: PollCardProps;
+  data: PollCardProps
 }
 
 const PollHeader: React.FC<Props> = ({ data }) => {
@@ -41,7 +41,7 @@ const PollHeader: React.FC<Props> = ({ data }) => {
         participants={data.participants}
       />
     </HStack>
-  );
+  )
 }
 
-export default PollHeader;
+export default PollHeader

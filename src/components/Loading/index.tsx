@@ -1,7 +1,7 @@
-import {Center,Spinner} from 'native-base'
+import { Center, Spinner } from 'native-base'
 
 const Loading: React.FC = () => {
-  return <Center ><Spinner color='yellow.500'/></Center>;
+  return <Center ><Spinner color='yellow.500'/></Center>
 }
 
-export default Loading;
+export default Loading

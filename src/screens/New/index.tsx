@@ -1,8 +1,7 @@
-import Logo from '@/assets/logo.svg';
-import { Button, Header, Input } from '@/components';
-import { Heading, VStack,Text } from 'native-base';
-import React from 'react';
-
+import Logo from '@/assets/logo.svg'
+import { Button, Header, Input } from '@/components'
+import { Heading, VStack, Text } from 'native-base'
+import React from 'react'
 
 const New: React.FC = () => {
   return (
@@ -12,8 +11,8 @@ const New: React.FC = () => {
         <VStack mt={8} mx={5} alignItems="center">
             <Logo/>
 
-            <Heading fontSize={"xl"} color={"white"} my={8} textAlign="center" >
-                Crie seu primeiro bolão da copa {"\n"} e compartilhe entre amigos!
+            <Heading fontSize={'xl'} color={'white'} my={8} textAlign="center" >
+                Crie seu primeiro bolão da copa {'\n'} e compartilhe entre amigos!
             </Heading>
 
             <Input
@@ -32,13 +31,12 @@ const New: React.FC = () => {
               px={2}
               mt={4}
             >
-              Após criar seu bolão, você reberá um código único{"\n"}
+              Após criar seu bolão, você reberá um código único{'\n'}
               que poderá usar para convidar outras pessoas.
             </Text>
         </VStack>
     </VStack>
-  );
-
+  )
 }
 
-export default New;
+export default New

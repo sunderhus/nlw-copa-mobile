@@ -1,23 +1,23 @@
-import { Avatar, Center, HStack, Text } from 'native-base';
+import { Avatar, Center, HStack, Text } from 'native-base'
 
 export interface ParticipantProps {
-  id: string;
+  id: string
   user: {
-    name: string;
-    avatarUrl: string;
-  };
-};
+    name: string
+    avatarUrl: string
+  }
+}
 
 interface Props {
-  participants: ParticipantProps[];
-  count: number;
-};
+  participants: ParticipantProps[]
+  count: number
+}
 
 const Participants: React.FC<Props> = ({ participants, count }) => {
   return (
     <HStack>
       {
-        participants && participants.map((participant) => (
+        participants?.map((participant) => (
           <Avatar
             key={participant.id}
             source={{ uri: participant.user.avatarUrl }}
@@ -39,7 +39,7 @@ const Participants: React.FC<Props> = ({ participants, count }) => {
         </Text>
       </Center>
     </HStack>
-  );
+  )
 }
 
 export default Participants

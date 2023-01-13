@@ -1,12 +1,12 @@
-import { HStack } from 'native-base';
-import CountryFlag from "react-native-country-flag";
+import { HStack } from 'native-base'
+import CountryFlag from 'react-native-country-flag'
 
-import Input from '@/components/Input';
+import Input from '@/components/Input'
 
 interface Props {
-  code: string;
-  position: 'left' | 'right';
-  onChangeText: (value: string) => void;
+  code: string
+  position: 'left' | 'right'
+  onChangeText: (value: string) => void
 }
 
 const Team: React.FC<Props> = ({
@@ -29,7 +29,7 @@ const Team: React.FC<Props> = ({
 
       {position === 'right' && <CountryFlag isoCode={code} size={25} style={{ marginLeft: 12 }} />}
     </HStack>
-  );
+  )
 }
 
-export default Team;
+export default Team

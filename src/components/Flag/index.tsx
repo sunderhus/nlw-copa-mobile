@@ -1,6 +1,6 @@
-import { Image, IImageProps } from 'native-base';
+import { Image, IImageProps } from 'native-base'
 
- const Flag:React.FC = ({ ...rest }: IImageProps)=> {
+const Flag: React.FC = ({ ...rest }: IImageProps) => {
   return (
     <Image
       {...rest}
@@ -9,7 +9,7 @@ import { Image, IImageProps } from 'native-base';
       h={6}
       mx={3}
     />
-  );
+  )
 }
 
-export default Flag;
+export default Flag

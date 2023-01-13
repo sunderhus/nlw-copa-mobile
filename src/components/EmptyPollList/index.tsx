@@ -1,6 +1,6 @@
-import { Row, Text, Pressable } from 'native-base';
+import { Row, Text, Pressable } from 'native-base'
 
-const EmptyPollList:React.FC = ()=> {
+const EmptyPollList: React.FC = () => {
   return (
     <Row flexWrap="wrap" justifyContent="center">
       <Text color="white" fontSize="sm" textAlign="center">
@@ -18,7 +18,7 @@ const EmptyPollList:React.FC = ()=> {
       </Text>
 
       <Pressable>
-        <Text textDecorationLine="underline"  color="yellow.500">
+        <Text textDecorationLine="underline" color="yellow.500">
           criar um novo
         </Text>
       </Pressable>
@@ -27,7 +27,7 @@ const EmptyPollList:React.FC = ()=> {
         ?
       </Text>
     </Row>
-  );
+  )
 }
 
-export default EmptyPollList;
+export default EmptyPollList

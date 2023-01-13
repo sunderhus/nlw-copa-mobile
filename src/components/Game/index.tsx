@@ -1,31 +1,31 @@
-import { Button, HStack, Text, useTheme, VStack, Icon } from 'native-base';
-import { AntDesign } from '@expo/vector-icons';
-import { getName } from 'country-list';
+import { Button, HStack, Text, useTheme, VStack, Icon } from 'native-base'
+import { AntDesign } from '@expo/vector-icons'
+import { getName } from 'country-list'
 
-import Team from "@/components/Team";
+import Team from '@/components/Team'
 
 interface GuessProps {
-  id: string;
-  gameId: string;
-  createdAt: string;
-  participantId: string;
-  firstTeamPoints: number;
-  secondTeamPoints: number;
+  id: string
+  gameId: string
+  createdAt: string
+  participantId: string
+  firstTeamPoints: number
+  secondTeamPoints: number
 }
 
 export interface GameProps {
-  id: string;
-  firstTeamCountryCode: string;
-  secondTeamCountryCode: string;
-  guess: null | GuessProps;
-};
+  id: string
+  firstTeamCountryCode: string
+  secondTeamCountryCode: string
+  guess: null | GuessProps
+}
 
 interface Props {
-  data: GameProps;
-  onGuessConfirm: () => void;
-  setFirstTeamPoints: (value: string) => void;
-  setSecondTeamPoints: (value: string) => void;
-};
+  data: GameProps
+  onGuessConfirm: () => void
+  setFirstTeamPoints: (value: string) => void
+  setSecondTeamPoints: (value: string) => void
+}
 
 const Game: React.FC<Props> = ({
   data,
@@ -33,7 +33,7 @@ const Game: React.FC<Props> = ({
   setSecondTeamPoints,
   onGuessConfirm
 }) => {
-  const { colors, sizes } = useTheme();
+  const { colors, sizes } = useTheme()
 
   return (
     <VStack
@@ -94,7 +94,7 @@ const Game: React.FC<Props> = ({
         </Button>
       }
     </VStack>
-  );
+  )
 }
 
 export default Game

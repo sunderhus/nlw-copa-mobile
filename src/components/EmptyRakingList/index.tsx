@@ -1,12 +1,12 @@
-import { Text } from 'native-base';
+import { Text } from 'native-base'
 
-const EmptyRakingList:React.FC = ()=> {
+const EmptyRakingList: React.FC = () => {
   return (
     <Text color="white" fontSize="sm" textAlign="center">
-      O ranking desse bolão ainda não foi {'\n'} 
+      O ranking desse bolão ainda não foi {'\n'}
       formado, aguarde os resultados.
     </Text>
-  );
+  )
 }
 
-export default EmptyRakingList;
+export default EmptyRakingList

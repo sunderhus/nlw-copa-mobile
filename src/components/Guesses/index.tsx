@@ -1,15 +1,15 @@
-import { Box } from 'native-base';
+import { Box } from 'native-base'
 
 interface Props {
-  pollId: string;
+  pollId: string
 }
 
-const Guesses:React.FC<Props> = ({ pollId })=> {
+const Guesses: React.FC<Props> = ({ pollId }) => {
   return (
     <Box>
 
     </Box>
-  );
+  )
 }
 
-export default Guesses;
+export default Guesses
